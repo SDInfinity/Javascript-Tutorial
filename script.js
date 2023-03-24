@@ -152,6 +152,19 @@ console.log(attr.classList.contains("red"));
 
 
 document.cookie="User=Harry";
+document.cookie="User2=Harry";
+// will update the cookie :-document.cookie="User=Harish";
 
 console.log(document.cookie);
+
+
+//encodeURICOomponent for special characters :
+
+// let key = prompt("enter key of cookie");
+// let value = prompt ("enter valur of cookie");
+
+// document.cookie=encodeURIComponent(`${key}`)+"="+encodeURIComponent(`${value}`);
+
+// console.log(document.cookie);
+
 
