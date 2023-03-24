@@ -151,7 +151,7 @@ console.log(attr.classList.contains("red"));
 
 
 
-document.cookie="User=Harryyyyyyy";
+document.cookie="User=Harry";
 
 console.log(document.cookie);
 
