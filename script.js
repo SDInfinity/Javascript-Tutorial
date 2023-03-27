@@ -170,17 +170,19 @@ console.log(document.cookie);
 
 //localStorage and related methods: 
 
-let key=prompt("Enter key for local Storage ");
-let value=prompt("Enter value of local storage");
+// let key=prompt("Enter key for local Storage ");
+// let value=prompt("Enter value of local storage");
 
-localStorage.setItem(`${key}`,`${value}`);
+// localStorage.setItem(`${key}`,`${value}`);
 
-console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
+// console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
 
 
-if(key=="red" || key=="blue")
-{
-    localStorage.removeItem(key);
-}
+// if(key=="red" || key=="blue")
+// {
+//     localStorage.removeItem(key);
+// }
 
-console.log(localStorage.key(1));
+// console.log(localStorage.key(1)+" "+localStorage.length);
+
+
