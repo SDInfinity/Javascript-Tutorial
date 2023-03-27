@@ -182,3 +182,5 @@ if(key=="red" || key=="blue")
 {
     localStorage.removeItem(key);
 }
+
+console.log(localStorage.key(1));
