@@ -186,3 +186,11 @@ console.log(document.cookie);
 // console.log(localStorage.key(1)+" "+localStorage.length);
 
 
+//session storage:
+
+//same methods as localStorage.
+
+// window.onstorage((e)=>{
+//     alert("changed");
+//     console.log(e);
+// })

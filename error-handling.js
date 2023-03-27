@@ -25,3 +25,4 @@ setTimeout(() => {
 
 
 //if we didn't use try-catch then our script would've stopped executing.
+
