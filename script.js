@@ -149,6 +149,7 @@ console.log(attr.classList.contains("red"));
 
 // hello1(hello2());
 
+//cookies
 
 
 document.cookie="User=Harry";
@@ -167,4 +168,17 @@ console.log(document.cookie);
 
 // console.log(document.cookie);
 
+//localStorage and related methods: 
 
+let key=prompt("Enter key for local Storage ");
+let value=prompt("Enter value of local storage");
+
+localStorage.setItem(`${key}`,`${value}`);
+
+console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
+
+
+if(key=="red" || key=="blue")
+{
+    localStorage.removeItem(key);
+}
