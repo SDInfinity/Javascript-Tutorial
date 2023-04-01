@@ -1,3 +1,5 @@
+
+
 let title = document.querySelector(".title");
 
 function loader(element) {
@@ -35,7 +37,7 @@ async function call(cityName) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '02a23a5896mshc6db6f1790bcd5ap1bfb99jsn677b8cf77f88',
+      'X-RapidAPI-Key': "02a23a5896mshc6db6f1790bcd5ap1bfb99jsn677b8cf77f88",
       'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
     }
   };
@@ -43,7 +45,11 @@ async function call(cityName) {
     let data = await api(cityName,options);
     console.log(data.temp);
     title.innerHTML = "";
-    loader(`The temperature in ${cityName} is ${data.temp} degree celsius.`);
+    loader(`The weather details of ${cityName} are as follows : 
+    
+    Temperature: ${data.temp} degree celsius \n, Feels like : ${data.feels_like} \n  ,Humidity : ${data.humidity}  \n ,Wind Speed : ${data.wind_speed} .
+    
+    `);
   } catch (error) {
     console.log(error);
     title.innerHTML = "";
