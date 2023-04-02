@@ -7,7 +7,7 @@ async function display() {
     }),
     new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve("Hacking Cape OF Infinity twitter....");
+        resolve("Hacking Cape Of Infinity twitter....");
       }, 3000);
     }),
     new Promise((resolve, reject) => {
