@@ -1,0 +1,24 @@
+html,body{
+    height: 100 vh;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+
+
+.ask
+{
+    margin:  10px;
+}
+
+input {
+    padding : 10px;
+}
+
+.container
+{
+    display: flex; 
+}
+
+div{
+    margin :  2px;
+}
