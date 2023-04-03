@@ -17,8 +17,8 @@ console.log(btn);
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
     localStorage.setItem(`${key.value}`,`${value.value}`);
-    div1.innerHTML+=`${key.value}`;
-    div2.innerHTML+=`${value.value}`;
+    div1.innerHTML+=`Value:${key.value}`;
+    div2.innerHTML+=`Key:${value.value},added to Local Storage.`;
 })
 
 div1.innerHTML+="";
