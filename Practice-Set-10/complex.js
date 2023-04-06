@@ -1,5 +1,4 @@
 
-
 class Complex{
     //a constructor that initialises an instance with a real and imaginary part.
     constructor(real,complex)
