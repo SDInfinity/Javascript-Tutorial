@@ -9,14 +9,14 @@
 </head>
 <body>
     This is a To Do list that takes notes and stores it in local Storage .
-  
-    
-    <div class="ask"> Enter your note here :</div>
+
    
     <form action="">
-        <input type="text" class="key" placeholder="Enter key">
-        <input type="text" class="value" placeholder="Enter value here ">
-        <button type="submit" class="btn">Submit</button>
+        <input type="text" class="key" placeholder="Enter Title">
+        <textarea class="value" name="" id="" cols="30" rows="10" placeholder="Enter Description"></textarea>
+        <button type="submit" class = "add-btn">Submit</button>
+        <button type="submit" class ="delete-btn">Delete</button>
+        <button type="submit" class ="clear-all">Clear All</button>
     </form>
     <div class="container">
 
@@ -24,6 +24,8 @@
         <div class="display-2"></div>
 
     </div>
+
+    <p class="info">Refresh to enter a new note...</p>
 
     <script src="script.js"></script>
     
