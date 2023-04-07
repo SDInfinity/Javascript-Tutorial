@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100vh;
+}
+
+
+h1{
+    margin: 20px 0;
+}
+
+
+input{
+    padding: 15px ;
+    width: 40%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    opacity: 0.8;
+}
+
+
+input:focus{
+    outline: none;
+}
+.container{
+
+    margin: 20px 20px;
+}
+
+button{
+    background-color: rgb(70, 140, 253);
+    border: none;
+    width: 20%;
+    margin: 10px 5px;
+    padding: 17px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+   opacity: 0.8;
+}
+
+p{
+    margin: 20px;
+}
+
+
+.info{
+    margin: 20px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 576px)
+{
+    button{
+        display: block;
+        width: 47%;
+        margin-left: 0px;
+    }
+}
