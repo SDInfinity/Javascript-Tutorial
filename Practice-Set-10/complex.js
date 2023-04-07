@@ -1,6 +1,6 @@
 
 class Complex{
-    //a constructor that initialises an instance with a real and imaginary part.
+    //a constructor that initialises an instance with a real and an imaginary part.
     constructor(real,complex)
     {
         this._real=real;
