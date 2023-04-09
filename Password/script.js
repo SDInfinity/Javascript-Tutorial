@@ -1,5 +1,6 @@
 
-let input = document.querySelector(".name");
+let input = document.querySelector(".length");
+const digits = "0123456789";
 class  Password{
     constructor(password)
     {
@@ -16,27 +17,29 @@ class  Password{
         this._password=password;
     }
 
-    static setPassword(name) {
+    static setPassword(userLength) {
         let password = "";
         const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
         const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         const specialChars = "!@#$%^&*()_+{}:\"<>?\|[];',./`~";
+        ;
       
         const requiredChars = [
           lowercaseChars.charAt(Math.floor(Math.random() * lowercaseChars.length)),
           uppercaseChars.charAt(Math.floor(Math.random() * uppercaseChars.length)),
           specialChars.charAt(Math.floor(Math.random() * specialChars.length)),
+          digits.charAt(Math.floor(Math.random()* digits.length))
         ];
       
-        password = name + requiredChars.join("");
+        password = requiredChars.join("");
       
         // Set the length of the password based on the length of the name parameter
-        let length = name.length + requiredChars.length + 5;
+        let length = requiredChars.length + userLength;
       
         //to add the remaining characters to the password.
         let remainingChars = lowercaseChars + uppercaseChars + specialChars;
       
-        for (let i = 0; i < length - requiredChars.length - name.length; i++) {
+        for (let i = 0; i < length - requiredChars.length; i++) {
           password += remainingChars.charAt(Math.floor(Math.random() * remainingChars.length));
         }
       
@@ -44,10 +47,9 @@ class  Password{
       }
       
      
-    static funnyPassword(name){
+    static funnyPassword(){
 
         let password="";
-        password+=name+"_";
 
         const funnyWords = ["Bamboozle", "Brouhaha", "Codswallop", "Gobbledygook", "Hocus-pocus", "Kerfuffle", "Lollygag", "Malarkey", "Nincompoop", "Piffle", "Poppycock", "Scootch", "Shenanigans", "Skedaddle", "Snickersnee","password","poo-poo","fart"];
         
@@ -77,36 +79,43 @@ let funny_btn = document.querySelector(".funny");
 
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
-    let name = input.value;
-    if(name.trim()!='')
+    let l= input.value;
+    if(l.trim()!='' && /\d/.test(l) && parseInt(l)>4)
     {
-        user.password = Password.setPassword(name);
+        user.password = Password.setPassword(parseInt(l));
         console.log(user.password);
         let message = document.createElement('p');
         message.innerHTML+=`Your generated password is : ${user.password}`;
+        let existingMessage = document.querySelector('.generated-password-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+
+        message.classList.add('generated-password-message');
         document.body.appendChild(message);
-        
     }else{
-        alert("Enter name please.");
-    } 
+        alert("Enter length please.");
+    }
 });
 
 
 funny_btn.addEventListener('click',(e)=>{
     e.preventDefault();
-    let name = input.value;
-    if(name.trim()!='')
-    {
-        user.password = Password.funnyPassword(name);
+        user.password = Password.funnyPassword();
         console.log(user.password);
         let message = document.createElement('p');
         message.innerHTML+=`Your generated funny password is : ${user.password}`;
+        let existingMessage = document.querySelector('.generated-password-message');
+        console.log(existingMessage);
+        //checking if there is already a message element.
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+
+        message.classList.add('generated-password-message');
         document.body.appendChild(message);
-        
-    }else{
-        alert("Enter name please.");
-    } 
-});
+    }
+);
 
 
 
