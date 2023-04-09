@@ -60,6 +60,11 @@ p{
     opacity: 0.5;
 }
 
+.note{
+    margin-left: 0;
+    opacity : 0.6;
+}
+
 @media only screen and (max-width: 576px)
 {
     button{
