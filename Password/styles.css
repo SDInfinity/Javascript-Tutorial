@@ -72,4 +72,9 @@ p{
         width: 47%;
         margin-left: 0px;
     }
+
+    input[type="text"]::placeholder{
+        opacity: 0.8;
+        font-size: 10px;
+    }
 }
