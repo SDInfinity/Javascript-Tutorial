@@ -1,0 +1,149 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+input{
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(8, 157, 162);
+    box-shadow: 0 0 15px rgb(21, 92, 95);
+    width: 300px;
+    color: white;
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+input:focus{
+    outline: none;
+    color: white;
+}
+
+button{
+    padding: 15px 10px;
+    border-radius: 25px;
+    border: none;
+    width: 180px;
+    margin-left: 20px; 
+    background-color: rgb(79, 247, 191);
+    box-shadow: 0 0 15px rgb(8, 92, 88);
+    color: rgb(36, 31, 31);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 20px  rgb(17, 182, 127),0 0 25px  rgb(79, 247, 191);
+}
+
+.container{
+    padding-top: 60px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(40,204,141);
+    background: rgb(37,114,176);
+    background: linear-gradient(90deg, rgba(37,114,176,1) 0%, #40eaa6 100%);
+    box-shadow: 0 0 15px rgb(8, 92, 88);
+}
+
+
+.first
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second{
+    display: flex;
+    margin-top: 10px;
+}
+
+div{
+    margin-right: 15px;
+}
+
+.line
+{
+    height: 60px;
+    background-color: white;
+    width: 0.5px;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.date{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.display{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer{
+    opacity: 0.5;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px)
+{
+    .container{
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .feel,.humidity{
+        font-size: 12px;
+    }
+    .temp{
+        font-size: 40px;
+    }
+    .date{
+        font-size: 15px;
+    }
+
+    .tagline{
+        width: 250px;
+        margin-left: 0;
+    }
+    button{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    footer{
+        margin-top: 25px;
+    }
+}
