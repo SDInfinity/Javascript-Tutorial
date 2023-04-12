@@ -26,16 +26,21 @@ async function display() {
 
   for (let i = 0; i < promises.length; i++) {
     const result = await promises[i];
-    let index = 0;
-    const intervalId = setInterval(() => {
-      if (index >= result.length) {
-        clearInterval(intervalId);
-      } else {
-        divs[i].innerHTML += result.charAt(index);
-        index++;
-      }
-    }, 50);
+    loader(result,divs[i]);
   }
 }
 
 display();
+
+function loader(element,messageDiv){
+  let index = 0;
+  const loadInterval = setInterval(()=>{
+    if(index< element.length)
+    {
+      messageDiv.textContent+=element.charAt(index);
+      index++;
+    }else{
+      clearInterval(loadInterval);
+    }
+  },50);
+}
