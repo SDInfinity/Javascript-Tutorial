@@ -21,6 +21,19 @@ async function display() {
       }, 7000);
     }),
   ];
+  
+  function loader(element,messageDiv){
+    let index = 0;
+    const loadInterval = setInterval(()=>{
+      if(index< element.length)
+      {
+        messageDiv.textContent+=element.charAt(index);
+        index++;
+      }else{
+        clearInterval(loadInterval);
+      }
+    },50);
+  }
 
   const divs = Array.from(document.querySelectorAll(".result"));
 
@@ -32,15 +45,4 @@ async function display() {
 
 display();
 
-function loader(element,messageDiv){
-  let index = 0;
-  const loadInterval = setInterval(()=>{
-    if(index< element.length)
-    {
-      messageDiv.textContent+=element.charAt(index);
-      index++;
-    }else{
-      clearInterval(loadInterval);
-    }
-  },50);
-}
+
