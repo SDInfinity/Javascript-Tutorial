@@ -1,4 +1,4 @@
-//immediately invoked fucntion expressions.
+//immediately invoked function expressions.
 
 let a = () =>{
     return new Promise((resolve,reject)=>{
