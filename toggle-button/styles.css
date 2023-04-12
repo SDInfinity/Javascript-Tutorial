@@ -1,0 +1,48 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    transition: 0.4s background-color;
+}
+
+.container{
+    padding: 20px 5px;
+    height: 100vh;
+}
+
+.button{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(77, 149, 250); 
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: 0;
+    margin: 1px;
+    transition: 0.4s;
+}
+
+input:checked + .button{
+    background-color: orange;
+}
+
+input:checked + .button::before{
+
+    transform: translateX(50px);
+    transition: 0.4s;
+}
+
+input{
+    display: none;
+}
