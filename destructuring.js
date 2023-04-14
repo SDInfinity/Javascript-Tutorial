@@ -45,6 +45,6 @@ const obj2 ={
 }
 
 
-console.log({...obj2,age: 18});
+console.log({...obj2,age: 20});
 
 //console.log({name: 18,...obj2}) will not work and the value will remain same.
