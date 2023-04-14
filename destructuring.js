@@ -23,7 +23,7 @@ const {x,y}={x:1 ,y:5};
 console.log(x,y);
 
 //Spread operator:
-
+//array to object.
 let arr2 =[3,5,8];
 
 let obj ={...arr1};
