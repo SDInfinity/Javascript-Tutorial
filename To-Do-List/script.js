@@ -16,19 +16,25 @@ console.log(btn);
 
 
 
+
 btn.addEventListener('click',(e)=>{
+
+    div1.innerHTML="";
+    div2.innerHTML="";
     const data = localStorage.getItem(key.value);
     e.preventDefault();
     if(key.value.trim()!='')
     {
     localStorage.setItem(`${key.value}`,`${description.value}`);
     div1.innerHTML+=`<h1>Title: ${key.value}</h1>`;
-    div2.innerHTML+=`<p>${description.value}`
+    div2.innerHTML+=`<p>${description.value}`;
     }else{
         alert("Add a note first.")
     }
-    
+   
 })
+
+
 
 //removes the data if it exists.
 del_btn.addEventListener('click',(e)=>{
