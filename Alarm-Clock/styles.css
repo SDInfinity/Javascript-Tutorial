@@ -11,6 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
 }
 
 .current{
@@ -26,9 +27,6 @@ body{
     
 }
 
-.date{
-    display: block;
-}
 
 h1{
     text-align: center;
