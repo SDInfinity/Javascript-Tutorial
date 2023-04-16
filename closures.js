@@ -6,7 +6,7 @@ function hello () {
     let c = function hello1(){
         console.log("Hi! " + message+".");
     }
-    message = "Not Hello" //this is will be the returned ,since the reference is returned.
+    message = "Not Hello" //this is will be returned ,since the reference is returned.
     c();
 }
 
