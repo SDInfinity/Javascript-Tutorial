@@ -47,7 +47,7 @@ set_btn.addEventListener("click",(e)=>{
     let sec = seconds.value;
     if(hrs.trim()!='' && mins.trim()!='' && sec.trim()!='' && /\d/.test(hrs) && /\d/.test(mins) && /\d/.test(sec))
     {
-        text.innerHTML=`Your alarm is at ${hrs}:${mins}:${sec} .`;
+        text.innerHTML=`Your alarm will go after  ${hrs} hrs ${mins} mins & ${sec} seconds.`;
         setAlarm(parseInt(hrs),parseInt(mins),parseInt(sec));
     }else{
         alert("Enter valid time for alarm ");

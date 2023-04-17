@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Alarm Clock</title>
-</head>
-<body>
-    <h1>Alarm Clock <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Icons8_flat_alarm_clock.svg/1200px-Icons8_flat_alarm_clock.svg.png" alt=""></h1>
-
-    <div class="current">
-        <h2> Current Time : </h2>
+  </head>
+  <body>
+    <div class="all">
+      <h1 class="title">
+        Alarm Clock
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Icons8_flat_alarm_clock.svg/1200px-Icons8_flat_alarm_clock.svg.png"
+          alt=""
+        />
+      </h1>
+      <div class="current">
+        <h2>Current Time :</h2>
         <div class="time">
-            <div class="hrs">00</div><span>:</span>
-            <div class="min">00</div><span>:</span>
-            <div class="sec">00</div>
+          <div class="hrs">00</div>
+          <span>:</span>
+          <div class="min">00</div>
+          <span>:</span>
+          <div class="sec">00</div>
         </div>
+      </div>
+      <div class="alarm">
+        <p class="title"><em>Set Alarm</em></p>
+        <form action="" class="form">
+          <input type="text" class="hours" placeholder="Enter hours." />
+          <input type="text" class="minutes" placeholder="Enter minutes." />
+          <input type="text" class="seconds" placeholder="Enter seconds." />
+          <button class="set">Set Alarm</button>
+          <button class="cancel">Cancel Alarm</button>
+        </form>
+        <p class="info">Refresh to set a new Alarm.</p>
+      </div>
     </div>
-    <div class="container">
 
-
-       
-        <div class="alarm">
-            <p class="title"><em>Set Alarm</em></p>
-            
-            <form action="" class="form">
-                <input type="text" class="hours" placeholder="Enter hours.">
-                <input type="text" class="minutes" placeholder="Enter minutes.">
-                <input type="text" class="seconds" placeholder="Enter seconds.">
-                <button class="set">Set Alarm</button>
-                <button class="cancel">Cancel Alarm</button>
-            </form>
-            <p class="info">Refresh to set a new Alarm.</p>
-        </div>
-
-
-
-    </div>
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
