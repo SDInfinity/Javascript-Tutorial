@@ -28,7 +28,7 @@ setTimeout( function()
 
 console.log('😅');
 
-//Output should be 😅😀😑  but its not 
+//Output should be 😀😑😅  but its not 
 //We start from the top , first statement gets executed in the call stack then gets popped out 
 //Now, it places the second statement in the call stack and when it tries to execute the statement, 
 //it finds out that setTimeout() doesn’t belong to JS so it pops out the function and puts in the WebAPI to get executed there.
