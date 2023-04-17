@@ -17,9 +17,37 @@ let minutes = document.querySelector(".minutes");
 let seconds = document.querySelector(".seconds");
 
 function setAlarm(hours, minutes, seconds) {
-    let timeInMillis = (parseInt(hours) * 3600 + parseInt(minutes) * 60 + parseInt(seconds)) * 1000;
     let loopCount = 5;
     let count = 0;
+    if (hours < 0 || hours > 23 || isNaN(hours)) {
+        alert('Please enter a valid hour value between 0 and 23.');
+        return;
+      }
+    
+      if (minutes < 0 || minutes > 59 || isNaN(minutes)) {
+        alert('Please enter a valid minute value between 0 and 59.');
+        return;
+      }
+    
+      if (seconds < 0 || seconds > 59 || isNaN(seconds)) {
+        alert('Please enter a valid second value between 0 and 59.');
+        return;
+      }
+
+      const alarmTime = new Date();
+      alarmTime.setHours(hours);
+      alarmTime.setMinutes(minutes);
+      alarmTime.setSeconds(seconds);
+
+      const now  = new Date();
+
+      const timeToAlarm = alarmTime - now ;
+
+      if (timeToAlarm < 0) {
+        alert('Invalid time, please select a future time.');
+        return;
+      }
+    
     let audio = new Audio('alarm.mp3');
     repeat = setTimeout(() => {
         audio.addEventListener('ended', function() {
@@ -30,8 +58,7 @@ function setAlarm(hours, minutes, seconds) {
             }
           });
           audio.play();
-    }, timeInMillis);
-    console.log(timeInMillis);
+    }, timeToAlarm);
   }
 
 
