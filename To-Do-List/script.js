@@ -20,7 +20,6 @@ console.log(btn);
 btn.addEventListener('click',(e)=>{
     div1.innerHTML="";
     div2.innerHTML="";
-    const data = localStorage.getItem(key.value);
     e.preventDefault();
     if(key.value.trim()!='')
     {
