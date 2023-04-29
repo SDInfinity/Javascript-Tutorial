@@ -3,7 +3,7 @@ Practice files for Javascript.
 
 Concepts covered :
 
-Concepts learned :
+
 
 1.Introduction to J.S
 2.Variables.
