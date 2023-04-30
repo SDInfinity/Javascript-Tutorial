@@ -39,7 +39,7 @@ Concepts covered :
 32.setInterval and setTimeout.
 33.Browser Events.
 34.Callbacks.
-35.Callabck Hell and Pyramid of Doom.
+35.Callback Hell and Pyramid of Doom.
 36.Introduction to Promises.
 37. .then() and .catch().
 38.Promise Chaining.
