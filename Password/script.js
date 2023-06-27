@@ -34,12 +34,12 @@ class  Password{
         password = requiredChars.join("");
       
         // Set the length of the password based on the length of the name parameter
-        let length = requiredChars.length + userLength;
+        let length =  userLength - requiredChars.length;
       
         //to add the remaining characters to the password.
         let remainingChars = lowercaseChars + uppercaseChars + specialChars;
       
-        for (let i = 0; i < length - requiredChars.length; i++) {
+        for (let i = 0; i < length; i++) {
           password += remainingChars.charAt(Math.floor(Math.random() * remainingChars.length));
         }
       
