@@ -82,6 +82,6 @@ let p1 = new Promise((resolve, reject) => {
   });
   
   //Other methods:
-  //Promise.any():-The outcome is the forst promise to get fulfilled and not rejected.
+  //Promise.any().
   //Promise.resolve().
   //Promise.reject().
