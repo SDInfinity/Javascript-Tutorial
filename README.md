@@ -45,7 +45,8 @@ Concepts covered :
 42. Error Handling. 43.Error object and custom errors. 
 44. Finally Clause. 
 45. Fetch API. 
-46. Sending Post Request with Fetch API. 47.Cookies in J.S. 
+46. Sending Post Request with Fetch API.
+47. 47.Cookies in J.S. 
 48. localStorage. 
 49. sessionStorage. 
 50. Object Oriented Programming. 
@@ -62,16 +63,17 @@ Concepts covered :
 61. Hoisting in J.S. 
 62. Closures in J.S. 
 63. Arrow Functions and this keyword. 
-64. Javascript on the Server. 65.NPM and Node packages. 
+64. Javascript on the Server.
+65. NPM and Node packages. 
 66. Modules in J.S. 
 67. Express J.S. 
 68. Regular Expressions in J.S. 
 69. Event Loop in J.S. 
 70. Projects.
 
-64. Javascript on the Server. 65.NPM and Node packages. 
-66. Modules in J.S. 
-67. Express J.S. 
-68. Regular Expressions in J.S. 
-69. Event Loop in J.S. 
-70. Projects.
+<b> View Projects </b>
+
+random-password-generator : password-fawn.vercel.app  
+alarm-clock: alarm-clock-seven.vercel.app
+toggle-button: dark-mode-v1.vercel.app
+pdf-merger: pdfx-j798.onrender.com
