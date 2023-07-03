@@ -74,6 +74,6 @@ Concepts covered :
 <b> View Projects </b>
 
 random-password-generator : password-fawn.vercel.app  
-alarm-clock: alarm-clock-seven.vercel.app
+alarm-clock: [alarm-clock-seven.vercel.app](https://alarm-clock-seven.vercel.app/)
 toggle-button: dark-mode-v1.vercel.app
 pdf-merger: pdfx-j798.onrender.com
